@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face{
+	font-family:fontName;
+	src: url(fonts/Blogger_Sans-Medium.otf);
+}
+body {
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: fontName, sans-serif;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.7em;
+}
+h3 {
+    font-size: 2em;
+}
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+li {
+    font-size: 1.25em;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/*-------Header----------*/
+header {
+    background-color:#f89728;
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+header a:hover {
+    color: #61116a;
+}
+
+/*-------------Hero--------------*/
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)), url("imagenes/backg-temp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: white;
+}
+#hero img {
+    width: 60vh;
+}
+
+/*--------mision y vision------------*/
+
+#mision-vision .container {
+    text-align: center;
+    padding: 160px 12px;
+}
+
+
+/*--------grooming--------*/
+#grooming{
+    background-color: #f89728;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+
+    color: #fff;
+}
+#grooming p{
+    padding: 20px;
+}
+
+/*----------------Servicios-----------------*/
+#servicios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.item-servicios li{
+    padding: 10px;
+}
+
+
+.img-cartel img{
+    width: 100%;
+}
+
+/*--------Responsive----------*/
+@media (min-width: 850px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+
+    #hero h1 {
+        font-size: 4em;
+    }
+
+
+    #mision-vision .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #mision-vision .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #mision-vision h2 {
+        margin-top: 0px;
+    }
+    
+    #mision-vision .img-container {
+        background-image: url("imagenes/imgtemporal.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #grooming p{
+        padding: 20px 180px;
+    }
+
+    #servicios h1{
+        font-size: 4em;
+        margin-top: 400px;
+    }
+    .img-cartel img{
+        width: 100%;
+    }
+
+    .item-servicios{
+        width: 80%;
+        flex-wrap: wrap;
+        display: inline;
+        
+        align-items: center;
+    }
+    .item-servicios ul{
+        align-items: center;
+    }
+    .item-servicios li{
+        font-size: 1.6em;
+
+        float: left;
+        padding: 30px;
+    }
+
+
+}
