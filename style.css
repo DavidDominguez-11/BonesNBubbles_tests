@@ -133,17 +133,61 @@ header a:hover {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
 }
-
 .item-servicios li{
     padding: 10px;
 }
-
-
 .img-cartel img{
     width: 100%;
 }
+
+
+/*--------------testimonios-----------------*/
+#testimonios{
+    background-color: #61116a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: auto;
+}
+#testimonios h1{
+    color: #fff;
+}
+.cards{
+    margin: 30px;
+}
+.card{
+    margin: 12px;
+    width: 260px;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    background: #f1f1f3;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+    color: black;
+    font-size: 0.8rem;
+}
+.card > * + * {
+    margin-top: 1.1em;
+}
+.card .card__content {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.card .card__title {
+    padding: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.card:hover .card__title {
+    color: #00b1b0;
+}
+
+
 
 /*--------Responsive----------*/
 @media (min-width: 850px) {
@@ -161,9 +205,13 @@ header a:hover {
         padding-right: 20px;
     }
 
+    h1{
+        font-size: 4em;
+    }
+
 
     #hero h1 {
-        font-size: 4em;
+        margin-top: 200px;
     }
 
 
@@ -198,30 +246,47 @@ header a:hover {
         padding: 20px 180px;
     }
 
+    #servicios{
+        width: 100%;
+    }
     #servicios h1{
-        font-size: 4em;
-        margin-top: 400px;
+        margin-top: 80px;
     }
     .img-cartel img{
         width: 100%;
     }
 
     .item-servicios{
-        width: 80%;
+        height: auto;
+        width: 100%;
         flex-wrap: wrap;
-        display: inline;
+
+        display: flex;
+        justify-content: space-around;
         
         align-items: center;
     }
-    .item-servicios ul{
-        align-items: center;
-    }
-    .item-servicios li{
+    .item-servicios p{
         font-size: 1.6em;
 
-        float: left;
-        padding: 30px;
+        /*float: left;*/
+        padding: 50px;
     }
+
+    #testimonios{
+        height: 90vh;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-around;
+
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 20%;
+    }
+
+
 
 
 }
