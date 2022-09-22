@@ -162,7 +162,7 @@ header a:hover {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: auto;
+    height: 100vh;
 }
 .item-servicios li{
     padding: 10px;
@@ -223,7 +223,7 @@ header a:hover {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: auto;
 }
 
 .contact-items a{
@@ -365,6 +365,10 @@ header a:hover {
         background: #f0f0f0;
         box-shadow: 15px 15px 30px #e6e6e6,
                     -15px -15px 30px #ffffff;
+    }
+
+    #contactanos{
+        height: 90vh;
     }
 
 }
