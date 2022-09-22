@@ -17,16 +17,16 @@ body {
 
 
 h1 {
-    font-size: 3em;
+    font-size: 2.9em;
 }
 h2 {
     font-size: 2.7em;
 }
 h3 {
-    font-size: 2em;
+    font-size: 2.2em;
 }
 p {
-    font-size: 1.25em;
+    font-size: 1.8em;
 }
 
 ul {
@@ -52,6 +52,9 @@ header .logo {
     font-weight: bold;
     color: #fff;
     font-size: 1.6em;
+}
+header img{
+    width: 60px;
 }
 
 header .container {
@@ -88,8 +91,9 @@ header a:hover {
     flex-direction: column;
     height: 100vh;
     background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.6)), url("imagenes/backg-temp.png");
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)), 
+            url("imagenes/hero-bgc.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -97,9 +101,25 @@ header a:hover {
 
 #hero h1 {
     color: white;
+    padding: 8px;
+    text-shadow: 0 0 4px rgb(0, 0, 0);
 }
 #hero img {
-    width: 40%;
+    width: 50%;
+}
+
+/*------------quienes somos-------------*/
+/*-------------agenda-tu-cita------------*/
+#quienes-somos, #agenda-tu-cita{
+    background-color: #00b1b0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: auto;
+
+    color: #fff;
 }
 
 /*--------mision y vision------------*/
@@ -109,6 +129,15 @@ header a:hover {
     padding: 160px 12px;
 }
 
+#mision-vision p{
+    padding-top: 0;
+    margin-top: 0;
+}
+#mision-vision h2{
+    margin-bottom: 5px;
+    color: #fff;
+    -webkit-text-stroke: 0.5px #00b1b0;
+}
 
 /*--------grooming--------*/
 #grooming{
@@ -118,7 +147,7 @@ header a:hover {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
 
     color: #fff;
 }
@@ -187,6 +216,36 @@ header a:hover {
     color: #00b1b0;
 }
 
+/*-------Contactanos---------*/
+#contactanos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.contact-items a{
+    margin: 30px;
+    padding: 30px;
+
+    width: auto;
+    height: auto;
+
+    border-radius: 20px;
+
+    
+}
+.contact-items img{
+    display: flex;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+}
+
+
+
 
 
 /*--------Responsive----------*/
@@ -204,6 +263,10 @@ header a:hover {
         padding-bottom: 0;
         padding-right: 20px;
     }
+    header img{
+        width: 60px;
+        margin-left: 115px;
+    }
 
     h1{
         font-size: 4em;
@@ -213,6 +276,11 @@ header a:hover {
     #hero h1 {
         margin-top: 200px;
     }
+    #hero img {
+        width: 40%;
+    }
+
+    
 
 
     #mision-vision .container {
@@ -287,6 +355,16 @@ header a:hover {
     }
 
 
+    .contact-items{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-items a{
+        margin: 20px;
 
+        background: #f0f0f0;
+        box-shadow: 15px 15px 30px #e6e6e6,
+                    -15px -15px 30px #ffffff;
+    }
 
 }
